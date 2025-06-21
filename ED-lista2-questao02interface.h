@@ -1,9 +1,9 @@
 
 /*
-** FunÁ„o : Sistema de Agendamento de Consultas MÈdicas
+** Fun√ß√£o : Sistema de Agendamento de Consultas M√©dicas
 ** Autor : Erick e Daysila
 ** Data : 18/06/2025
-** ObservaÁıes: Interface do sistema de agendamento: definiÁ„o do TAD para agendamento do mÈdico e enfermeiro com informaÁıes de nome, data e hora do paciente
+** Observa√ß√µes: Interface do sistema de agendamento: defini√ß√£o do TAD para agendamento do m√©dico e enfermeiro com informa√ß√µes de nome, data e hora do paciente
 */
 
 #ifndef AGENDAMENTO_H
@@ -22,14 +22,14 @@ typedef struct {
 
 
 typedef struct {
-    Paciente pacientes[MAX_MEDICO]; //FILA ET¡TICA
+    Paciente pacientes[MAX_MEDICO]; //FILA ET√ÅTICA
     int inicio;
     int fim;
     int tamanho;
 } FilaMedico;
 
 
-typedef struct NoEnfermagem { //N”
+typedef struct NoEnfermagem { //N√ì
     Paciente paciente;
     struct NoEnfermagem *proximo;
 } NoEnfermagem;
